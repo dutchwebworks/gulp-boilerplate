@@ -1,6 +1,6 @@
 /*
 	Dutchwebworks Gulp boilerplate (2014)
-	https://gist.github.com/dutchwebworks/10528947#file-readme-md
+	https://github.com/dutchwebworks/gulp-boilerplate
 */
 
 /**********************************************************************
