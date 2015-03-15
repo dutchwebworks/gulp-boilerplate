@@ -78,7 +78,7 @@ gulp.task('cssmin', function(){
 	return gulp.src([
 			'./css/style.css'
 		])
-		.pipe($.concat('style.css'))
+		.pipe($.concat('style.min.css'))
 		.pipe($.minifyCss({
 			keepBreaks: false,
 			removeEmpty: true
@@ -86,7 +86,7 @@ gulp.task('cssmin', function(){
 		.pipe($.header(meta.banner, {
 			pkg : pkg,
 		 } ))	
-		.pipe(gulp.dest('./css/min'))
+		.pipe(gulp.dest('./css'))
 });
 
 /* Optimize JPG, PNG and GIF's
@@ -169,6 +169,7 @@ gulp.task('clean', function(){
 // Server (proxy) and file `watcher` livereload for local development
 gulp.task('serve', ['browser-sync'], function(){
 	gulp.watch('./sass/**/*.scss', ['sass:dev', reload]);
+	// gulp.watch("./*.html").on('change', reload);
 });
 
 // Aliasses, sub-tasks
