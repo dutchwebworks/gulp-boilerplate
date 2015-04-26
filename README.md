@@ -1,6 +1,6 @@
 # Dutchwebworks Gulp Boilerplate
 
-*By Dennis Burger, april 2014*
+*By Dennis Burger, april 2015*
 
 Below are instructions to install **NodeJS** and the required **NPM packages** used by this **Gulp Boilerplate's** [gulpfile.js](https://gist.github.com/dutchwebworks/10528804#file-gulpfile-js) and [package.json](https://gist.github.com/dutchwebworks/10528804#file-package-json). On Mac you might need to **prefix** the commands below with `sudo ` to install them using an **admin account**.
 
