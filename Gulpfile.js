@@ -1,5 +1,5 @@
 /*
-	Dutchwebworks Gulp boilerplate (2014)
+	Dutchwebworks Gulp boilerplate, april 2015
 	https://github.com/dutchwebworks/gulp-boilerplate
 */
 
@@ -50,12 +50,12 @@ var pkg = require('./package.json'),
 gulp.task('sass:dev', function(){
 	return gulp.src('./sass/**/*.scss')
 		.pipe($.newer('./css'))
-		.pipe($.plumber())
 		.pipe($.sourcemaps.init())
 		.pipe($.sass({
 			style: 'extended',
 			sourceComments: 'map',
-			sourcemap: true
+			sourcemap: true,
+			errLogToConsole: true
 		}))
 		.pipe($.sourcemaps.write('./'))
 		.pipe(gulp.dest('./css'))
@@ -64,9 +64,10 @@ gulp.task('sass:dev', function(){
 gulp.task('sass:dist', function(){
 	return gulp.src('./sass/**/*.scss')
 		.pipe($.newer('./css'))
-		.pipe($.plumber())
 		.pipe($.sass({
 			style: 'extended',
+			sourcemap: false,
+			errLogToConsole: true
 		}))
 		.pipe(gulp.dest('./css'))
 });
