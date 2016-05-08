@@ -1,8 +1,7 @@
 # Dutchwebworks Gulp Boilerplate
 
-*By Dennis Burger, april 2015*
+*By Dennis Burger, may 2016*
 
-Below are instructions to install **NodeJS** and the required **NPM packages** used by this **Gulp Boilerplate's** [gulpfile.js](https://gist.github.com/dutchwebworks/10528804#file-gulpfile-js) and [package.json](https://gist.github.com/dutchwebworks/10528804#file-package-json). On Mac you might need to **prefix** the commands below with `sudo ` to install them using an **admin account**.
 
 ### Github issue tracking
 
@@ -11,7 +10,7 @@ Issue's and questions can be reported and tracked on the [Github issue page](htt
 ## Prerequisites
 
 * [NodeJS](http://nodejs.org)
-* [Gulp command-line interface](http://gulpjs.com/getting-started) (gulp-cli) 
+* [Gulp command-line interface](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) (gulp-cli) 
 
 ## One-time installation
 
@@ -57,7 +56,7 @@ Create a NPM `package.json` file in the root of your project by running the comm
 
 	npm init
 
-Then run the NPM install command below to install the required packages for this boilerplate. By using the `--save-dev` flag, the package names and versions are saved to the `package.json` file for future reference. 
+Then run the NPM install command below to install the required packages for this boilerplate. By using the `--save-dev` flag, the package names and versions are saved to the `package.json` file for future reference.
 
 	npm install --save-dev gulp browser-sync@0.7.2 gulp-clean gulp-concat gulp-imagemin gulp-minify-css gulp-plumber gulp-ruby-sass gulp-svgmin gulp-uglify gulp-newer gulp-header
 
@@ -102,7 +101,7 @@ Please read the `gulpfile.js` itself for further available Gulp tasks, comments 
 
 All (Gulp) NPM development dependency packages are listed in `package.json` file. When running `npm install` in the project root directory NodeJS creates a directory called `node_modules/` and downloads the required (Gulp) dependency packages to this directory.
 
-Since these dependencies are managed by NodeJS NPM (Node Package Manager) this `node_modules/` directory should be **ignored by your version-control system**. 
+Since these dependencies are managed by NodeJS NPM (Node Package Manager) this `node_modules/` directory should be **ignored by your version-control system**.
 
 ## Dealing with watch and buffer errors on *nix systems
 
